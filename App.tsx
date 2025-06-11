@@ -5,7 +5,7 @@
  * @format
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -26,6 +26,10 @@ import Snackbar from 'react-native-snackbar';
 
 
 function App(): React.JSX.Element {
+
+  const [inputValue,setInputValue] = useState('');
+  const [resultValue,setresultValue] = useState('');
+  const [targetCurrency,settargetCurrency] = useState('');
 
   return (
     <SafeAreaView>
